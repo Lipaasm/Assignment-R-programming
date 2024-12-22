@@ -20,8 +20,7 @@ install.packages("readxl")
 library(readxl)
 df <- read_excel("C:/Users/bgbgnht/OneDrive/Desktop/AMR_KAP_Data.xlsx")
 
-#import data
-AMR_KAP_Data <- read.csv(data/"AMR_KAP_Data.csv")
+
 #install packages
 install.packages("ggplot2")
 install.packages("dplyr")
