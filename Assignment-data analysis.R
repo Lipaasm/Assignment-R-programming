@@ -1,3 +1,34 @@
+#install.packages
+install.packages("ggthemes", "hrbrthemes", "ggsci", "ggpubr")
+
+#install color packages
+install.packages("RColorBrewer")
+install.packages("colorspace")
+
+#load packages
+library(tidyverse)
+library(ggthemes)
+library(gtsummary)
+library(ggsci)
+library(hrbrthemes)
+library(RColorBrewer)
+library(colorspace)
+
+install.packages("readxl")
+library(readxl)
+df <- read-excel("AMR_KAP_Data.xlsx")
+df <- read-excel("C:/users/bgbnht/oneDrive/Desktop/AMR_KAP_Data.xlsx")
+
+# Grouped bar chart
+ggplot(kap_data, aes(x = Parents_education_level, fill = Parents_sex)) +
+  geom_bar(position = "dodge") +
+  labs(title = "Parent’s Education Level by Parent’s Sex",
+       x = "Education Level",
+       y = "Count",
+       fill = "Parent's Sex") +
+  theme_minimal() 
+  
+
 install.packages("ggplot2")
 library(ggplot2)
 #bar chart for parents age 
